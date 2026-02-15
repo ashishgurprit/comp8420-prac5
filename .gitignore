@@ -1,0 +1,15 @@
+# Streamlined Development - Claude Code configuration
+# These files are synced from a private master repo
+.claude/
+
+# Common ignores
+node_modules/
+.env
+.env.local
+*.log
+dist/
+build/
+__pycache__/
+*.pyc
+.venv/
+venv/
