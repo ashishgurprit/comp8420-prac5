@@ -52,3 +52,14 @@ This project uses the centralized learning system.
 - **Sync**: `/project:sync` or `~/streamlined-development/scripts/sync-from-master.sh`
 - **Contribute**: `/project:post-mortem` then `~/streamlined-development/scripts/contribute-lesson.sh`
 
+
+## Cross-Platform Path Rules — MANDATORY
+
+This project may be worked on from Windows, Mac, or Codespaces.
+**Never hardcode absolute paths** in committed files.
+
+- Use `{MASTER}` as a placeholder for the Streamlined-Development repo path in docs/skills
+- In bash scripts use the `$HOME`-based fallback chain (see `~/.claude/CLAUDE.md`)
+- In Python use the `pathlib.Path.home()` candidate list (see `~/.claude/CLAUDE.md`)
+- Never write `/Users/<name>/`, `C:/Users/<name>/`, or single-OS tilde paths in committed files
+- Exception: historical debriefs/plans/reports are read-only records — leave them as-is
