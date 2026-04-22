@@ -14,13 +14,13 @@
 
 ```bash
 # Development
-npm run dev          # or your dev command
+pnpm run dev          # or your dev command
 
 # Testing
-npm test             # or your test command
+pnpm test             # or your test command
 
 # Build
-npm run build        # or your build command
+pnpm run build        # or your build command
 ```
 
 ## Architecture
